@@ -23,6 +23,8 @@ job_title = "Software Engineer"
 # change the location to whatever you want to search for
 location = "California, United States"
 
+
+
 # Setup web driver
 options = Options()
 # options.add_argument("--headless")
@@ -30,6 +32,8 @@ browser = webdriver.Chrome(options=options)
 # Wait for the login process to complete
 browser.implicitly_wait(10)  # Adjust the wait time as needed
 browser.set_window_size(1500, 800)
+
+
 
 # Open LinkedIn login page
 def login(browser, username, password):
